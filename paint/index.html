@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Paint App</title>
+</head>
+<body>
+    <header class="toolbar">
+        <h1>Paint App</h1>
+        <div class="controls">
+            <label for="brush-size">Tamanho do Pincel:</label>
+            <input type="range" id="brush-size" min="1" max="50" value="5">
+            <label for="color">Cor:</label>
+            <input type="color" id="color" value="#000000">
+            <select id="brush-type">
+                <option value="round">Redondo</option>
+                <option value="square">Quadrado</option>
+            </select>
+            <button id="clear-button">Limpar</button>
+            <button id="undo-button">Desfazer</button>
+            <button id="redo-button">Refazer</button>
+        </div>
+    </header>
+    <div class="canvas-container">
+        <canvas id="paintCanvas"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
